@@ -8,7 +8,7 @@ public class ConvertSecondsIntoMinutes {
 		System.out.println("What's your name?");
 		String name = input.nextLine();
 		
-		System.out.println("Enter an integer for seconds");
+		System.out.println("Enter an integer for seconds.");
 		int seconds = input.nextInt();
 		input.nextLine();
 		
