@@ -21,6 +21,10 @@ public class SumOfCrossProduct {
 		int a4 = input.nextInt();
 		input.nextLine();
 		
+		System.out.println("Enter the 5th Integer in Sequence 1:");
+		int a5 = input.nextInt();
+		input.nextLine();
+		
 		System.out.println("Enter the 1st Integer in Sequence 2:");
 		int b1 = input.nextInt();
 		input.nextLine();
@@ -37,9 +41,13 @@ public class SumOfCrossProduct {
 		int b4 = input.nextInt();
 		input.nextLine();
 		
-		int sum = ((a1*b1)+(a2*b2)+(a3*b3)+(a4*b4));
+		System.out.println("Enter the 5th Integer in Sequence 2:");
+		int b5 = input.nextInt();
+		input.nextLine();
 		
-		System.out.println("sum([" + a1 + ", " + a2 + ", " + a3 + ", " + a4 + "] * [" + b1 + ", " + b2 + ", " + b3 + ", " + b4 + "]) = " + sum);
+		int sum = ((a1*b1)+(a2*b2)+(a3*b3)+(a4*b4)+(a5*b5));
+		
+		System.out.println("sum([" + a1 + ", " + a2 + ", " + a3 + ", " + a4 + ", " + a5 + "] * [" + b1 + ", " + b2 + ", " + b3 + ", " + b4 + ", " + b5 + "]) = " + sum);
 		
 		input.close();
 	}
