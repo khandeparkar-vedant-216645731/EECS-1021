@@ -55,16 +55,13 @@ public class RockPaperScissorsGame {
 		    winsP2 = winsP2 + 0;
 		}
 		
-		if ((winsP1 > winsP2) || (winsP2 > winsP1)) {
-			if (winsP1 > winsP2) {
-				System.out.println("Game over: " + player1 + " wins!");
-			}
-			else {
-				System.out.println("Game over: " + player2 + " wins!");
-			}
+		if (winsP1 == 2) {
+			System.out.println("Game over : " + player1 + " wins!");
 		}
-		else {
-			
+		else if (winsP2 == 2) {
+			System.out.println("Game over : " + player2 + " wins!");
+		}
+		else {	
 			System.out.println("========");
 			System.out.println("Round 3");
 			System.out.println("========");
@@ -97,7 +94,7 @@ public class RockPaperScissorsGame {
 		   else {
 			   System.out.println("Game over: a tie between " + player1 + " and " + player2);
 		  }
-		}	
+	   }	
     input.close();
 	}
 }
