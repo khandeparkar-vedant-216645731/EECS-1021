@@ -21,7 +21,10 @@ public class ComputeTax {
 			input.nextLine();
 			if (income > 0 && income <= 8350) {
 				double payment1 = (0.1)*(income);
+				double part1 = payment1;
 				System.out.println(name + ", you should pay $" + payment1);
+				System.out.println("Calculation is based on the scheme of Single Filing:");
+				System.out.println("Part I: " + part1);
 			}
 			else if (income > 8350 && income <= 33950) {
 				double part1 = (0.1)*8350;
@@ -50,7 +53,10 @@ public class ComputeTax {
 			input.nextLine();
 			if (income > 0 && income <= 16700) {
 				double payment4 = (0.1)*income;
+				double part1 = payment4;
 				System.out.println(name + ", you should pay $" + payment4);
+				System.out.println("Calculation is based on the scheme of Married Filing:");
+				System.out.println("Part I: " + part1);
 			}
 			else if (income > 16700 && income <= 67900) {
 				double part1 = (0.1)*16700;
