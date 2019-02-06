@@ -11,14 +11,17 @@ public class PrintBetweenNumbers4 {
 			System.out.println("Enter a lower bound:");
 			int l = input.nextInt();
 			input.nextLine();
+			int lOut = l;
 			
 			System.out.println("Enter a upper bound:");
 			int u = input.nextInt();
 			input.nextLine();
+			int uOut = u;
 			
 			System.out.println("Enter a middle number:");
 			int m = input.nextInt();
 			input.nextLine();
+			int mOut = m;
 			
 			if (l>u) {
 				System.out.println("Error: lower bound " + l + " is not less than or equal to the upper bound " + u);
@@ -32,15 +35,15 @@ public class PrintBetweenNumbers4 {
 					l = l+1;
 				}
 				if ((m%2)==1) {
-					m = m + 1;
+					m = m+1;
 				}
 				
-				System.out.println("Odd numbers between " + l + " and " + m + " are:");
+				System.out.println("Odd numbers between " + lOut + " and " + mOut + " are:");
 				while (l<=m) {
 					System.out.println(l);
 					l = l+2;
 				}
-				System.out.println("Even numbers between " + m + " and " + u + " are:");
+				System.out.println("Even numbers between " + mOut + " and " + uOut + " are:");
 				while (m<=u) {
 				    System.out.println(m);
 					m = m+2;	
