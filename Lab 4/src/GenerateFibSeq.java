@@ -25,6 +25,20 @@ public class GenerateFibSeq {
 					x = 1;
 			    }
 			} 
+			else if (size == 1) {
+				System.out.println("Fibonacci Sequence of size " + size + ":");
+				System.out.println("<1>");
+				
+				System.out.println("Would you like to continue? (Y/N)");
+				String ans = input.nextLine();
+				if (ans.equals("N")) {
+					System.out.println("Bye!");
+					x = 0;
+				}
+				else if (ans.equals("Y")) {
+					x = 1;
+			    }
+			}
 			else {
 				int p1 = 1;
 				int p2 = 0;
