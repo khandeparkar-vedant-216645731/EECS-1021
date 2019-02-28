@@ -52,7 +52,13 @@ public class DetermineFibSeq {
 			int p = 0;
 			
 			while (x > 0) {
-				if (count == 2 && isSeq[0] == 1 && isSeq[1] == 1) {
+				if (isSeq[0] == 1 && count == 1) {
+					p = 1;
+				}
+				else if (isSeq[0] != 1 && count == 1) {
+					p = 0;
+				}
+			    else if (count == 2 && isSeq[0] == 1 && isSeq[1] == 1) {
 					p = 1;
 				}
 				else if (isSeq[1] != 1) {
