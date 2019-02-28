@@ -52,11 +52,14 @@ public class DetermineFibSeq {
 			int p = 0;
 			
 			while (x > 0) {
-				if (isSeq[0] != 1 || isSeq[1] != 1) {
+				if (count == 2 && isSeq[0] == 1 && isSeq[1] == 1) {
+					p = 1;
+				}
+				else if (isSeq[1] != 1) {
 					p = 0;
 				}
 				else {
-					for (int i = 2; i <= count-2; i++) {
+					for (int i = 2; i <= count-1; i++) {
 						if (isSeq[i] == isSeq[i-1] + isSeq[i-2]) {
 							p = 1;
 						}
@@ -71,7 +74,7 @@ public class DetermineFibSeq {
 			if (p == 1) {
 				System.out.println("is the first " + count + " numbers in the Fibonacci Sequence.");
 			}
-			else {
+			else if (p == 0) {
 				System.out.println("is not the first " + count + " numbers in the Fibonacci Sequence.");
 			}
 			
