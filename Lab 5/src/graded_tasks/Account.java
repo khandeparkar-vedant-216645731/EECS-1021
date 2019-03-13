@@ -2,10 +2,6 @@ package graded_tasks;
 
 public class Account {
 	
-	Account acc1;
-	Account acc2;
-	Account acc3;
-	Account acc4;
 	String name;
 	char type;
 	double initialBalance;
