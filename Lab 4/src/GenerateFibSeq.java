@@ -12,7 +12,7 @@ public class GenerateFibSeq {
 			int size = input.nextInt();
 			input.nextLine();
 			if (size <= 0) {
-				System.out.println("Error: Fibonacci Sequence must have size >= 1");
+				System.out.println("Error: Fibonacci Sequence must have size >= 1.");
 				x = -1;
 				
 				System.out.println("Would you like to continue? (Y/N)");
